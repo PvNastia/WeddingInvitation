@@ -17,6 +17,9 @@ body {
     min-height: 500px;
     display: flex;
     flex-direction: column;
+    transform: scale(1);
+    transition: transform 1.5s ease;
+    z-index: 1;
 
 
     h1 {
@@ -32,7 +35,7 @@ body {
 
     h2 {
         color: rgb(42, 40, 40);
-        padding-top: 30px;
+        padding-top: 50px;
         font-family: "Merriweather", serif;
         font-weight: 600;
         font-size: 20px;
@@ -183,24 +186,24 @@ body {
             width: 50px;
             height: 30px;
             border-radius: 5px;
-          
+          border: 1px solid black;
         
         }
        
         .one {
-            background-color: rgb(0, 0, 0);
+            background-color: #fff;
         }
         .two {
-            background-color: rgb(255, 255, 255);
+            background-color: #e6dcd3;
         }
         .three {
-            background-color: rgb(234, 255, 152);
+            background-color: #b4a79e;
         }
         .four {
-            background-color: rgb(48, 70, 114);
+            background-color: #3f352c;
         }
         .five {
-            background-color: rgb(0, 108, 72);
+            background-color: #000;
         }
     }
 
@@ -221,6 +224,10 @@ body {
     min-height: 500px;
      align-items: center;
     margin: 0 auto;
+    transform: scale(1);
+    transition: transform 1.5s ease;
+    z-index: 1;
+
 
     text-align: center; 
     h2 {
@@ -253,10 +260,15 @@ body {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
-transition-delay: 0.3s;
+transition-delay: 0.5s;
   }
   
   .hidden-text.show {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  
+  .hidden-img.active {
+    transform: scale(1.2); 
   }
